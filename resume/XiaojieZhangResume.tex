@@ -1,0 +1,210 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Xiaojie Zhang}{ \textbf{Email}:zhangxiaojie10@otcaix.iscas.ac.cn    \textbf {Mobile}:(+86) 15201295094}{\small \textbf{Address}:Technology Center of Software Engineering, Institute of Software, P. O. Box 8718, Beijing, China, 100190
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{\textbf{Objective}}
+\begin{body}
+	\vspace{14pt}
+	Hadoop and Big Data Cloud: Software Engineer
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{\textbf{Education}}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{M.S. Distributed System and Software Engineering }{} \hfill \emph{September 2010 - present}{} \\
+	\emph{Technology Center of Software Engineering, ISCAS}, Beijing, China{} \\
+  \medskip
+	\textbf{B.S. Computer Science and Technology --- GPA 3.55/4.00} \hfill \emph{September 2006 - June 2010} \\
+	\emph{Ocean University Of China}, Qingdao, Shandong\\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Intership
+\header{\textbf{Internship}}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Baidu Inc.}, \emph{Information and Technolgy Department} \hfill \emph{December 2010 - June 2011}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item As a main teammember to develop a java EE aplication for Baidu HR recruitment system using spring, JPA/Hibernate, Struts, lucence framework
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Selected project
+\header{\textbf{Selected project}}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{A file synchronize and share system called OnceCloudShare like Dropbox} \hfill \emph{June 2012 - present}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item The product provides three clients application which includes PC client, browser client and Mobile Client for users to synchronize and share their files.
+			 In order to give these clients a uniform interface, we design a service layer which give these clients restful interface to invoke and provide Java, C++ API for  different applications.
+		\item In this project, my work is to design and implements the service layer. 
+		\item Related techology:spring mvc,spring core,restful webservice,hadoop hdfs,JPA/Hibernate, cloud storage, maven.
+	\end{itemize}
+	\medskip
+	\textbf{A file synchronize and share system called OnceCloudShare like Dropbox} \hfill \emph{June 2012 - present}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item The product provides three clients application which includes PC client, browser client and Mobile Client for users to synchronize and share their files.
+			 In order to give these clients a uniform interface, we design a service layer which give these clients restful interface to invoke and provide Java, C++ API for  different applications.
+		\item In this project, my work is to design and implements the service layer. 
+		\item Related techology:spring mvc,spring core,restful webservice,hadoop hdfs,JPA/Hibernate, cloud storage, maven.
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+\header{\textbf{Selected Publications}}
+
+\begin{body}
+	\vspace{14pt}
+	Seth Holloway. ``\textbf{Writing Resumes in LaTeX},'' in \emph{Proceedings of the Mind of Seth Holloway}. 2011.\\
+	\smallskip
+	Seth Holloway, Andrea Holloway. ``\textbf{Accent Modification Rules},'' in \emph{Proceedings of Fun}. 2008.\\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{\textbf{Skills}}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming:}}{} Java, HTML/CSS, bash, batch, JavaScript, STAF/STAX, Rational Functional Tester, \LaTeX, Ruby on Rails, Python, PHP, Visual Basic, SQL, Expect, WinTask, Injection, HyperScript, C++, C, Assembly\\
+	\medskip
+	\emph{\textbf{Operating Systems:}}{} Windows, Mac OS X, Linux, UNIX\\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{\textbf{Leadership Activities}}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Co-founder, President}, Students in Software Engineering (SSE) \hfill {} \emph{Summer 2008 - Spring 2011}\\
+	\smallskip
+	\textbf{Mentor}, Undergraduate and graduate student mentor \hfill{} \emph{Fall 2007 - Spring 2011}\\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+\header{\textbf{Awards and Honors}}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{College Scholar}, The University of Texas at Austin \hfill{} \emph{2003 - 2005}\\
+	\smallskip
+	\textbf{Runner-up}, Moore Elementary Recycling Slogan Contest
+\end{body}
+
+\end{document}
